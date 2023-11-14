@@ -79,7 +79,7 @@ const content = {
 }
 
 // ! Do not edit this , this just adds default values to the top variable, change this where this is imported
-content.shortDescription = content.description.slice(0, 100);
+content.shortDescription = "Dashboard";
 ssw.logo.fillColor = "#fff";
 ssw.logo.gradient.startColor = "f00";
 ssw.logo.gradient.stopColor  = "0f0" ;
@@ -88,7 +88,7 @@ content.ssw = ssw;
 // !
 
 // TODO : Edit this part
-content.logo.svg = <></>
+content.logo.svg = content.ssw.logo.svg
 content.name = "Soft Served Web"
 
 export { content }
