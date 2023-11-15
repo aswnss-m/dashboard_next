@@ -2,7 +2,7 @@ import { client } from "../server"
 
 export async function GET(request: Request, response: Response) {
     try {
-        const results = await client.("SELECT * FROM subscribers;")
+        const results = await client.query("SELECT * FROM subscribers;")
         return Response.json({
             status: response.status,
             results: {

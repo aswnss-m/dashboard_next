@@ -1,5 +1,5 @@
 import { client } from "../../server"
-export async function GET(request :Request){
+export async function POST(request :Request){
     const query = "SELECT table_name FROM information_schema.tables WHERE table_schema=\'public\' AND table_type=\'BASE TABLE\';"
     try{
         const results = await client.query(query)
